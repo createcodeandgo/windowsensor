@@ -10,7 +10,7 @@ Every window gets an Arduino Pro Mini with an CNY70 distance sensor and a nRF24L
 #### Problem:
 If the Arduinos need to wake up after an Interrupt came in, the nRF24 module can't go into sleep mode. This setup needs too much power.
 #### Solution:
-The Arduinos go into a deep sleep including the nRF24 module. They wake up after a certain amount of time and send their data to the Raspberry Pi. The Raspberry Pi code can run on a server that is running all the time anyway. The signal of two Arduinos could arrive at the same time, but rarely and with ACK messages that should be easy to handle.
+The Arduinos go into a deep sleep including the nRF24 module. They wake up after a certain amount of time and send their data to the Raspberry Pi. The Raspberry Pi code can run on a server that is running all the time anyway. The signal of two Arduinos could arrive at the same time, but rarely and with ACK messages that should be easy to handle. The message will be encrypted with AES.
 
 ### Components used:
 - Arduino Pro Micro

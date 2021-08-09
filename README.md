@@ -21,7 +21,7 @@ The Arduinos go into a deep sleep including the nRF24 module. They wake up after
 - planned: a temperature sensor on some Arduinos
 
 ### Code
-The arduino code is written with the Arduino IDE and the Raspberry Pi uses python scripts.
+The arduino code is written with the Arduino IDE and the Raspberry Pi uses a python script.
 
 ### Circuit design:
 
